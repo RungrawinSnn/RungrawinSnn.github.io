@@ -11,10 +11,11 @@ body {
 }
 
 .hero {
-  min-height: 100vh;
-  width: 100%;
+  max-width: 100%;
+  width: 100%;  
   background: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
   position: relative;
+  box-sizing: border-box;
 }
 
 .hero:after {
@@ -262,6 +263,32 @@ body {
 
 
 
+
+
+
+
+
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -478,8 +505,8 @@ html {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
   max-width: 960px;
   margin: 0 auto;
   padding: 24px 0;
@@ -1014,4 +1041,41 @@ html {
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* เริ่มจากสมาร์ทโฟน */
+body { font-size: 1rem; }
+.navbar { padding: 16px; flex-direction: column; }
+
+@media (min-width: 600px) {
+  /* จอแท็บเล็ตขึ้นไป */
+  .navbar { flex-direction: row; justify-content: space-between; }
+  .hero-content { flex-direction: row; }
+}
+
+@media (min-width: 900px) {
+  /* เดสก์ท็อป */
+  .aboutme-container { flex-direction: row; }
+  .portfolio-grid { grid-template-columns: repeat(3, 1fr); }
 }
