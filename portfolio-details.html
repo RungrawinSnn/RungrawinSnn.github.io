@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Personal Bootstrap Template</title>
+  <title>Portfolio - Personal Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="portfolio-details-page">
+<body class="portfolio-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -53,7 +53,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
           
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -71,8 +71,8 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Portfolio Details</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <h1>Portfolio</h1>
+              <p class="mb-0">A complete showcase of my university and internship projects—ranging from academic prototypes to real-world automation tools. This portfolio highlights hands-on experience in data analytics, Excel VBA, Power BI, and web-based applications developed to solve practical problems.</p>
             </div>
           </div>
         </div>
@@ -81,111 +81,276 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+            <li class="current">Portfolio</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
 
-        <div class="row gy-4">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">University</li>
+            <li data-filter=".filter-product">Internship</li>
+      
+          </ul><!-- End Portfolio Filters -->
 
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-              <div class="swiper-wrapper align-items-center">
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Business.png" alt="">
+
+
+
+
+                       <!-- App 1 -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/U1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>University Project 1</h4>
+                  <p>ROV Skin Preference Analysis & Custom Skin Design</p>
+                  <a href="assets/img/portfolio/U1.png" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Analytics.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Dashbord.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Yena1.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Yena2.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Bright1.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Bright2.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Bright3.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Violet1.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Violet2.png" alt="">
-                </div>
-
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
+            </div><!-- End Portfolio Item -->
 
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Business Intelligence</li>
-                <li><strong>Client</strong>: Garena (Case Study)</li>
-                <li><strong>Project date</strong>: Jan – May 2024</li>
-                <li><strong>Project URL</strong>: <a href="#">Not applicable</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>ROV Skin Preference Analysis & Custom Skin Design</h2>
-              <p>
-                We conducted a market analysis on ROV players' preferences using surveys and data techniques.
-Our goal was to design skin concepts that better align with user expectations.
-The outcome includes anime-themed, customizable skins with enhanced effects and storytelling.
-This project applied real-world business intelligence, persona creation, and data-driven product design.
-              </p>
-            </div>
-          </div>
+
+
+
+                  
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/image (5).png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Internship Project 1</h4>
+                  <p>Real-Time Delivery Monitor V.1</p>
+                  <a href="assets/img/portfolio/image (5).png" title="" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details9.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+
+
+
+
+          
+            
+
+            
+
+
+
+
+
+
+
+
+
+                        <!-- App 2 -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/U2.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>University Project 2</h4>
+                  <p>Strategic Revenue Planning for Butterfly Park</p>
+                  <a href="assets/img/portfolio/U2.png" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details2.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/image.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Internship Project 2</h4>
+                  <p>Real-Time Delivery Monitor V.2</p>
+                  <a href="assets/img/portfolio/image.png" title="" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details8.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            
+
+            
+
+
+
+
+                 <!-- App 3 -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/U5.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>University Project 3</h4>
+                  <p>Smart Computer Store & Inventory Management System</p>
+                  <a href="assets/img/portfolio/U5.png" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details3.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/U8.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>University Project 4</h4>
+                  <p>Smart Ordering & Management System for Noodle Restaurant</p>
+                  <a href="assets/img/portfolio/U8.png" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details4.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/U3.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>University Project 5</h4>
+                  <p>Game ID Price Prediction Using Machine Learning</p>
+                  <a href="assets/img/portfolio/U3.png" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details5.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/U11.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>University Project 6</h4>
+                  <p>Game Knowledge Archive & Categorization System</p>
+                  <a href="assets/img/portfolio/U11.png" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details6.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/U9.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>University Project 7</h4>
+                  <p>Innovative Multi-Use Furniture Design for Small Spaces</p>
+                  <a href="assets/img/portfolio/U9.png" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details7.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+
+
+
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/image (3).png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Internship Project 3</h4>
+                  <p>Print on Demand Job Manager V.2 (Excel VBA App)</p>
+                  <a href="assets/img/portfolio/image (3).png" title="" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details10.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/image22.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Internship Project 5</h4>
+                  <p>Print on Demand Job Manager V.3 (Python + Web App)</p>
+                  <a href="assets/img/portfolio/image22.png" title="" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details11.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/image 6.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Internship Project 4</h4>
+                  <p>Inventory Traffic Dashboard (Power BI)</p>
+                  <a href="assets/img/portfolio/image 6.png" title="" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details12.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+
+
+
+
+
+
+
+            
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+         
 
         </div>
 
       </div>
 
-    </section><!-- /Portfolio Details Section -->
+    </section><!-- /Portfolio Section -->
 
   </main>
 
@@ -194,11 +359,10 @@ This project applied real-world business intelligence, persona creation, and dat
       <h3 class="sitename">ALiTCH</h3>
       <p>Data Analyst & BI Developer | Turning data into insights every day.</p>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/RickC137XXX" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/luckywhite.tiger/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/alitch_junoir/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/rungrawin-samnaknon-266784313/" target="_blank"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
